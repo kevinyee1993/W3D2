@@ -433,5 +433,17 @@ class QuestionsFollow
     top_results.map { |q| Questions.new(q) }
   end
 
+  def average_karma
+
+    answer = QuestionsDBConnection.instance.execute(<<-SQL)
+    SELECT
+
+    FROM
+    
+    WHERE
+    SQL
+
+  end
+
 
 end
